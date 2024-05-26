@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/img/travel_logo.png"), linear-gradient(to bottom, #00a6ff, #10439F); 
+    background-size: auto; 
+    background-position: center;  
+    background-attachment: fixed; 
+}
+
+.card {
+    color: white;
+}
+
+.card-header {
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 0px 0px 10px #0755bb;
+    margin: 30px 0;
+}
+
+.card-body {
+    width: 900px;
+    border-radius: 20px;
+    background-color: #004d969d;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-body label {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.card-body input {
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    background-color: #123c8a;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px; 
+}
+
+.card-body button {
+    background-color: white;
+    color: #00256be1;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all linear .3s;
+    display: block;
+    margin: 30px auto;
+}
+
+.card-body button:hover,
+.card-body button:active {
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.main-page {
+    text-align: right;
+    margin: 20px 0;
+}
+
+.main-page a {
+    color: white;
+    text-shadow: 0px 0px 10px rgb(0, 82, 177);
+    font-size: 30px;
+}
+
+/*********************** LOGIN ***********************/
+.form-check label {
+    font-size: 20px;
+    color: #123c8a;
+    font-weight: 800;
+}
+
+.forgot-password {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.forgot-password a {
+    color: rgb(112, 222, 255);
+    font-size: 20px;
+}
+
+/*********************** RESET ***********************/
+.invalid-feedback {
+    display: block;
+    color: rgb(175, 11, 11);
+    font-weight: 800;
+    font-size: 20px;
+    text-shadow: 0px 0px 10px rgb(0, 82, 177);
+}
+
+
+/* ---------------------- CSS media queries ------------------- */
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+        
+    .card-header {
+        font-size: 30px;
+        margin: 20px 0;
+    }
+
+    .card-body {
+        width: 400px;
+    }
+
+    .card-body label {
+        font-size: 20px;
+    }
+
+    .card-body input {
+        font-size: 20px;
+    }
+
+    .card-body button {
+        font-size: 20px;
+        margin: 10px auto;
+    }
+
+    .main-page a {
+        font-size: 20px;
+    }
+
+    /*********************** LOGIN ***********************/
+    .form-check label {
+        font-size: 16px;
+    }
+
+    .forgot-password {
+        padding-bottom: 20px;
+    }
+
+    .forgot-password a {
+        font-size: 16px;
+    }
+
+    /*********************** RESET ***********************/
+    .invalid-feedback {
+        font-size: 16px;
+    }
+}

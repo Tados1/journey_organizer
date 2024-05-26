@@ -1,0 +1,173 @@
+.journey_section {
+    background-color: #ffffffbb;
+    color: #10439F;
+    font-size: 20px;
+    text-align: center;
+    width: 80vw;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+.show .journey_title h1 {
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    font-weight: 800;
+    text-shadow: 0px 0px 10px #10429f;
+    margin: 20px;
+}
+
+/************************** GENERALLY **************************/
+.update-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.update-delete .fa-pen-to-square {
+    color: #10429fbe;
+    font-size: 30px;
+    transition: all linear .2s;
+}
+
+.update-delete .fa-pen-to-square:hover,
+.update-delete .fa-pen-to-square:active {
+    color: #10429f;
+}
+
+.update-delete .trash_icon {
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 0, 0, 0.562);
+    font-size: 30px;
+    cursor: pointer;
+    transition: all linear .2s;
+}
+
+.update-delete .trash_icon:hover,
+.update-delete .trash_icon:active {
+    color: rgb(255, 0, 0);
+}
+
+/************************** PACKING **************************/
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    padding: 5px;
+    transition: all linear .2s;
+}
+
+.items:hover,
+.items:active {
+    border-radius: 10px;
+    background-color: #10429f2c;
+}
+
+.items li {
+    list-style: none;
+}
+
+.update-delete.packing {
+    font-size: 25px;
+}
+
+
+/************************** CREATE **************************/
+.create a {
+    display: block;
+    width: 400px;
+    margin: 10px auto;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 5px solid #039aff;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #004d96;
+    color: white;
+    transition: all linear .2s;
+}
+
+.create a:hover,
+.create a:active {
+    background-color: #1a82e4;
+}
+
+.destroy_whole_journey button {
+    display: block;
+    margin: 20px auto;
+    width: 400px;
+    font-size: 22px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    border: 5px solid rgb(194, 0, 0);
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: all linear .2s;
+}
+
+.destroy_whole_journey button:hover,
+.destroy_whole_journey button:active {
+    background-color: #8d0808;
+}
+
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+
+    .journey_section {
+        font-size: 18px;
+    }
+
+    .journey_section p {
+        font-size: 15px;
+    }
+
+    .show .journey_title h1 {
+        font-size: 30px;
+    }
+    
+    /************************** GENERALLY **************************/
+    .update-delete {
+        gap: 10px;
+        margin: 5px 0;
+    }
+    
+    .update-delete .fa-pen-to-square {
+        font-size: 20px;
+    }
+    
+    .update-delete .trash_icon {
+        font-size: 20px;
+    }
+    
+    /************************** PACKING **************************/
+    
+    .items {
+        font-size: 17px;
+        padding: 0px;
+    }
+
+    
+    /************************** CREATE **************************/
+    .create a {
+        width: 300px;
+        border: 2px solid #039aff;
+        font-size: 17px;
+    }
+    
+    .destroy_whole_journey button {
+        width: 300px;
+        font-size: 17px;
+        border: 2px solid rgb(194, 0, 0);
+    }
+}

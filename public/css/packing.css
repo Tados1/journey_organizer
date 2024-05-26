@@ -1,0 +1,126 @@
+.packing form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 70px auto;
+    border-radius: 20px;
+    background-color: #004d969d;
+    color: white;
+}
+
+.packing form input[type="text"] {
+    width: 400px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 0px;
+    background-color: #123c8a;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.packing form input::placeholder {
+    color: rgba(255, 255, 255, 0.822);
+}
+
+.packing form button {
+    width: 400px;
+    background-color: white;
+    color: #00256be1;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+
+.packing form button:hover,
+.packing form button:active {
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.packing-items {
+    width: 500px;
+    margin: 30px auto;
+    border-radius: 20px;
+    background-color: #004d969d;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+
+.packing-items h1 {
+    color: #123c8a;
+    font-weight: 800;
+}
+
+.packing-items ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.previous-page {
+    text-align: center;
+}
+
+.previous-page a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 10px #00256b;
+    font-size: 30px;
+    font-weight: 800;
+    transition: all linear .3s;
+}
+
+.previous-page a:hover,
+.previous-page a:active {
+    color: rgb(0, 195, 255);
+}
+
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+
+    .packing form {
+        width: 300px;
+        margin: 30px auto;
+    }
+    
+    .packing form input[type="text"] {
+        width: 200px;
+        padding: 10px 0px;
+        font-size: 15px;
+    }
+    
+    .packing form button {
+        width: 200px;
+        padding: 5px 0px;
+        font-size: 17px;
+    }
+    
+    .packing-items {
+        width: 300px;
+        margin: 30px auto;
+        font-size: 20px;
+    }
+
+    .packing-items li {
+        font-size: 15px;
+    }
+
+    .previous-page a {
+        font-size: 17px;
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,23 @@
+body {
+    background-image: url("/img/travel_logo.png"), linear-gradient(to bottom, #00a6ff, #10439F); 
+    background-size: auto; 
+    background-position: center;  
+    background-attachment: fixed; 
+}
+
+header {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.288);
+    padding: 20px;
+    font-size: 40px;
+}
+
+
+/* ---------------------- CSS media queries ------------------- */
+
+@media only screen and (max-width: 1200px) {
+    body {
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+}

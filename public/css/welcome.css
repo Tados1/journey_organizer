@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/img/travel_logo.png"), linear-gradient(to bottom, #00a6ff, #10439F); 
+    background-size: auto; 
+    background-position: center;  
+    background-attachment: fixed; 
+}
+
+.welcome {
+    margin-top: 200px;
+}
+
+.welcome h1 {
+    font-size: 80px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 0px 10px #002e6b;
+}
+
+.welcome p {
+    font-size: 30px;
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    color: white;
+    background-color: #10429f9d;
+    text-shadow: 0px 0px 10px #0755bb;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.login-register {
+    text-align: center;
+}
+
+.login-register a {
+    text-decoration: none;
+    text-align: center;
+    color: #0755bb;
+    background-color: rgba(255, 255, 255, 0.89);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+    font-size: 35px;
+    font-weight: 800;
+    width: 300px;
+    display: inline-block;
+    transition: all linear .3s;
+}
+
+.login-register a:hover,
+.login-register a:active {
+    background-color: rgba(0, 183, 255, 0.445);
+    color: white;
+}
+
+/* ---------------------- CSS media queries ------------------- */
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+
+    .welcome {
+        margin-top: 50px;
+    }
+
+    .welcome h1 {
+        font-size: 40px;
+    }
+
+    .welcome p {
+        font-size: 16px;
+        width: 80%;
+        padding: 10px;
+    }
+
+    .login-register a {
+        margin: 5px;
+        font-size: 20px;
+        width: 170px;
+    }
+}

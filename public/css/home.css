@@ -1,0 +1,74 @@
+.home ul li {
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.842);
+    border-radius: 20px;
+    width: 800px;
+    text-align: center;
+    margin: 30px auto;
+    cursor: pointer;
+    transition: all linear .3s;
+}
+
+.home ul li:hover,
+.home ul li:active {
+    background-color: #004d96b6; 
+}
+
+
+.home ul li a {
+    text-decoration: none;
+    color: #004d96;
+    font-size: 60px;
+    font-weight: 800;
+    display: block;
+    width: 100%;
+    transition: all linear .3s;
+}
+
+.home ul li a:hover,
+.home ul li a:active {
+    color: white; 
+}
+
+
+.create-destination {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    background-color: #7ab848;
+    color: #005e27;
+    border-radius: 20px;
+    width: 500px;
+    padding: 10px 0px;
+    margin: 10px auto;
+    transition: all linear .3s;
+}
+
+.create-destination:hover,
+.create-destination:active {
+    background-color: #81d839fd;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        background-size: cover; 
+        background-repeat: no-repeat;
+    }
+
+    .home ul li {
+        width: 300px;
+        margin: 20px auto;
+    }
+    
+    .home ul li a {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+    
+    .create-destination {
+        font-size: 25px;
+        width: 300px;
+    }
+}
